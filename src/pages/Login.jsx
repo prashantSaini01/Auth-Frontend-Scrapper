@@ -45,8 +45,8 @@ const Login = () => {
     try {
       const response = await account.createOAuth2Session(
         "google",
-        "http://localhost:3000/home", // Success URL
-        "http://localhost:3000/login" // Failure URL
+        "https://master.d1lnzmm8oled13.amplifyapp.com/home", // Success URL
+        "https://master.d1lnzmm8oled13.amplifyapp.com/login" // Failure URL
       );
       localStorage.setItem("token", response); // Save the token
       navigate("/home"); // Redirect to home on success
